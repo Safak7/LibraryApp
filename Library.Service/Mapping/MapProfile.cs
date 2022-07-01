@@ -17,6 +17,10 @@ namespace Library.Service.Mapping
             CreateMap<Book, BookDTO>().ReverseMap();
             CreateMap<Author, AuthorDTO>().ReverseMap();
             CreateMap<Publisher, PublisherDTO>().ReverseMap();
+
+
+            CreateMap<Book, BooksWithAuthorDTO>();
+            CreateMap<Author, AuthorWithBooksDto>();
         }
        
     }
